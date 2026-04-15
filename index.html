@@ -13,7 +13,7 @@
   <meta name="twitter:title" content="Lumiere Media & Marketing">
   <meta name="twitter:description" content="KI-gestützte Social-Media-Agentur für Zahnarztpraxen und Kosmetikstudios. Mehr Patienten. Mehr Sichtbarkeit. Mehr Umsatz.">
   <meta name="twitter:image" content="assets/og-image.svg">
-  <meta name="theme-color" content="#1B2A4A">
+  <meta name="theme-color" content="#000000">
   <!-- Fonts self-hosted in assets/fonts/ (DSGVO compliant) -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -21,7 +21,7 @@
       theme: {
         extend: {
           colors: {
-            navy: { DEFAULT: '#1B2A4A', light: '#243556', dark: '#111D35' },
+            navy: { DEFAULT: '#111111', light: '#161616', dark: '#0A0A0A' },
             gold: { DEFAULT: '#C9A84C', light: '#D4B96A', dark: '#B8963A' },
           },
           fontFamily: {
@@ -57,7 +57,7 @@
   }
   </script>
 </head>
-<body class="bg-white font-sans antialiased">
+<body class="bg-black font-sans antialiased">
 
   <!-- ============ NAVIGATION ============ -->
   <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
@@ -73,9 +73,9 @@
           <a href="#leistungen" class="text-sm font-medium text-white/80 hover:text-gold transition-colors">Leistungen</a>
           <a href="#ergebnisse" class="text-sm font-medium text-white/80 hover:text-gold transition-colors">Ergebnisse</a>
           <a href="#ueber" class="text-sm font-medium text-white/80 hover:text-gold transition-colors">Über uns</a>
-          <div class="flex items-center gap-1">
-            <span class="text-xl cursor-default" title="Deutsch">🇩🇪</span>
-            <a href="en/" class="text-xl opacity-40 hover:opacity-100 transition-opacity" title="English">🇬🇧</a>
+          <div class="lang-switcher">
+            <span class="cursor-default" title="Deutsch">🇩🇪</span>
+            <a href="en/" class="opacity-40 hover:opacity-100 transition-opacity" title="English">🇬🇧</a>
           </div>
           <a href="#kontakt" class="btn-gold text-sm">Kostenloses Audit</a>
         </div>
@@ -98,9 +98,9 @@
           <a href="#ergebnisse" class="block px-4 py-2 text-white/80 hover:text-gold transition-colors">Ergebnisse</a>
           <a href="#ueber" class="block px-4 py-2 text-white/80 hover:text-gold transition-colors">Über uns</a>
           <a href="#kontakt" class="block px-4 py-3 text-center btn-gold text-sm">Kostenloses Audit</a>
-          <div class="flex items-center justify-center gap-2 px-4 py-2">
-            <span class="text-2xl cursor-default" title="Deutsch">🇩🇪</span>
-            <a href="en/" class="text-2xl opacity-40 hover:opacity-100 transition-opacity" title="English">🇬🇧</a>
+          <div class="lang-switcher justify-center px-4 py-2">
+            <span class="cursor-default" title="Deutsch">🇩🇪</span>
+            <a href="en/" class="opacity-40 hover:opacity-100 transition-opacity" title="English">🇬🇧</a>
           </div>
         </div>
       </div>
@@ -108,10 +108,10 @@
   </nav>
 
   <!-- ============ HERO ============ -->
-  <section class="hero-pattern min-h-screen flex items-center pt-20" style="background: linear-gradient(135deg, #111D35 0%, #1B2A4A 50%, #243556 100%)">
+  <section class="hero-pattern min-h-screen flex items-center pt-20" style="background: linear-gradient(135deg, #000000 0%, #0A0A0A 50%, #111111 100%)">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32">
       <div class="max-w-3xl">
-        <div class="inline-flex items-center gap-2 bg-white/10 rounded-full px-4 py-1.5 mb-8">
+        <div class="inline-flex items-center gap-2 bg-black/10 rounded-full px-4 py-1.5 mb-8">
           <span class="w-2 h-2 bg-gold rounded-full animate-pulse"></span>
           <span class="text-sm text-white/80 font-medium">Spezialisiert auf Dental & Kosmetik</span>
         </div>
@@ -152,57 +152,57 @@
   </section>
 
   <!-- ============ PROBLEM / SOLUTION ============ -->
-  <section class="py-20 md:py-28 bg-gray-50">
+  <section class="py-20 md:py-28 section-border-top" style="background: #0A0A0A">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid md:grid-cols-2 gap-12 md:gap-16">
         <!-- Problem -->
         <div class="fade-up">
-          <div class="inline-flex items-center gap-2 bg-red-50 text-red-600 rounded-full px-4 py-1.5 mb-6">
+          <div class="inline-flex items-center gap-2 bg-red-900/30 text-red-500/70 rounded-full px-4 py-1.5 mb-6">
             <span class="text-sm font-semibold">Das Problem</span>
           </div>
-          <h2 class="text-3xl md:text-4xl font-bold text-navy mb-6">Kennen Sie das?</h2>
+          <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">Kennen Sie das?</h2>
           <div class="space-y-4">
             <div class="flex gap-3">
-              <svg class="w-6 h-6 text-red-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
-              <p class="text-gray-600">Ihre Social-Media-Kanäle sind seit Wochen inaktiv</p>
+              <svg class="w-6 h-6 text-red-500/70 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+              <p class="text-white/60">Ihre Social-Media-Kanäle sind seit Wochen inaktiv</p>
             </div>
             <div class="flex gap-3">
-              <svg class="w-6 h-6 text-red-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
-              <p class="text-gray-600">Sie posten ohne Strategie und sehen keine Ergebnisse</p>
+              <svg class="w-6 h-6 text-red-500/70 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+              <p class="text-white/60">Sie posten ohne Strategie und sehen keine Ergebnisse</p>
             </div>
             <div class="flex gap-3">
-              <svg class="w-6 h-6 text-red-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
-              <p class="text-gray-600">Ihre Konkurrenz gewinnt online Patienten, die zu Ihnen kommen sollten</p>
+              <svg class="w-6 h-6 text-red-500/70 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+              <p class="text-white/60">Ihre Konkurrenz gewinnt online Patienten, die zu Ihnen kommen sollten</p>
             </div>
             <div class="flex gap-3">
-              <svg class="w-6 h-6 text-red-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
-              <p class="text-gray-600">Sie haben keine Zeit, sich um Marketing zu kümmern</p>
+              <svg class="w-6 h-6 text-red-500/70 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+              <p class="text-white/60">Sie haben keine Zeit, sich um Marketing zu kümmern</p>
             </div>
           </div>
         </div>
 
         <!-- Solution -->
         <div class="fade-up">
-          <div class="inline-flex items-center gap-2 bg-emerald-50 text-emerald-600 rounded-full px-4 py-1.5 mb-6">
+          <div class="inline-flex items-center gap-2 bg-emerald-900/30 text-emerald-400 rounded-full px-4 py-1.5 mb-6">
             <span class="text-sm font-semibold">Die Lösung</span>
           </div>
-          <h2 class="text-3xl md:text-4xl font-bold text-navy mb-6">So helfen wir Ihnen</h2>
+          <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">So helfen wir Ihnen</h2>
           <div class="space-y-4">
             <div class="flex gap-3">
-              <svg class="w-6 h-6 text-emerald-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-              <p class="text-gray-600">Professionelle Social-Media-Betreuung, die Patienten anzieht</p>
+              <svg class="w-6 h-6 text-gold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+              <p class="text-white/60">Professionelle Social-Media-Betreuung, die Patienten anzieht</p>
             </div>
             <div class="flex gap-3">
-              <svg class="w-6 h-6 text-emerald-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-              <p class="text-gray-600">Maßgeschneiderte Inhalte speziell für Dental & Kosmetik</p>
+              <svg class="w-6 h-6 text-gold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+              <p class="text-white/60">Maßgeschneiderte Inhalte speziell für Dental & Kosmetik</p>
             </div>
             <div class="flex gap-3">
-              <svg class="w-6 h-6 text-emerald-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-              <p class="text-gray-600">KI-gestützte Tools für schnellere und bessere Ergebnisse</p>
+              <svg class="w-6 h-6 text-gold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+              <p class="text-white/60">KI-gestützte Tools für schnellere und bessere Ergebnisse</p>
             </div>
             <div class="flex gap-3">
-              <svg class="w-6 h-6 text-emerald-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-              <p class="text-gray-600">Sie konzentrieren sich auf Ihre Patienten — wir auf Ihr Marketing</p>
+              <svg class="w-6 h-6 text-gold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+              <p class="text-white/60">Sie konzentrieren sich auf Ihre Patienten — wir auf Ihr Marketing</p>
             </div>
           </div>
         </div>
@@ -211,34 +211,34 @@
   </section>
 
   <!-- ============ HOW IT WORKS ============ -->
-  <section class="py-20 md:py-28" style="background: #F8FAFC">
+  <section class="py-20 md:py-28" style="background: #0A0A0A">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-16 fade-up">
-        <h2 class="text-3xl md:text-4xl font-bold text-navy mb-4">So funktioniert's</h2>
+        <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">So funktioniert's</h2>
         <div class="section-divider mb-6"></div>
-        <p class="text-lg text-gray-500 max-w-2xl mx-auto">In drei einfachen Schritten zu mehr Patienten.</p>
+        <p class="text-lg text-white/50 max-w-2xl mx-auto">In drei einfachen Schritten zu mehr Patienten.</p>
       </div>
 
       <div class="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
         <!-- Step 1 -->
         <div class="text-center fade-up">
           <div class="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 text-2xl font-black text-white" style="background: linear-gradient(135deg, #B8963A, #C9A84C, #D4B96A)">1</div>
-          <h3 class="text-xl font-bold text-navy mb-3">Kostenloses Audit</h3>
-          <p class="text-gray-500 leading-relaxed">Wir analysieren Ihre aktuelle Social-Media-Präsenz und zeigen Ihnen ungenutztes Potenzial — kostenlos und unverbindlich.</p>
+          <h3 class="text-xl font-bold text-white mb-3">Kostenloses Audit</h3>
+          <p class="text-white/50 leading-relaxed">Wir analysieren Ihre aktuelle Social-Media-Präsenz und zeigen Ihnen ungenutztes Potenzial — kostenlos und unverbindlich.</p>
         </div>
 
         <!-- Step 2 -->
         <div class="text-center fade-up">
           <div class="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 text-2xl font-black text-white" style="background: linear-gradient(135deg, #B8963A, #C9A84C, #D4B96A)">2</div>
-          <h3 class="text-xl font-bold text-navy mb-3">Strategie & Content</h3>
-          <p class="text-gray-500 leading-relaxed">Wir erstellen einen maßgeschneiderten Content-Plan und produzieren professionelle Beiträge speziell für Ihre Praxis.</p>
+          <h3 class="text-xl font-bold text-white mb-3">Strategie & Content</h3>
+          <p class="text-white/50 leading-relaxed">Wir erstellen einen maßgeschneiderten Content-Plan und produzieren professionelle Beiträge speziell für Ihre Praxis.</p>
         </div>
 
         <!-- Step 3 -->
         <div class="text-center fade-up">
           <div class="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 text-2xl font-black text-white" style="background: linear-gradient(135deg, #B8963A, #C9A84C, #D4B96A)">3</div>
-          <h3 class="text-xl font-bold text-navy mb-3">Wachstum & Ergebnisse</h3>
-          <p class="text-gray-500 leading-relaxed">Sie gewinnen neue Patienten über Social Media — wir optimieren kontinuierlich für maximale Ergebnisse.</p>
+          <h3 class="text-xl font-bold text-white mb-3">Wachstum & Ergebnisse</h3>
+          <p class="text-white/50 leading-relaxed">Sie gewinnen neue Patienten über Social Media — wir optimieren kontinuierlich für maximale Ergebnisse.</p>
         </div>
       </div>
 
@@ -252,43 +252,42 @@
   </section>
 
   <!-- ============ SERVICES / PRICING ============ -->
-  <section id="leistungen" class="py-20 md:py-28 bg-white">
+  <section id="leistungen" class="py-20 md:py-28 section-border-top" style="background: #111111">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-16 fade-up">
-        <h2 class="text-3xl md:text-4xl font-bold text-navy mb-4">Unsere Pakete</h2>
+        <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Unsere Pakete</h2>
         <div class="section-divider mb-6"></div>
-        <p class="text-lg text-gray-500 max-w-2xl mx-auto">Transparente Preise. Keine versteckten Kosten. Wählen Sie das Paket, das zu Ihrer Praxis passt.</p>
+        <p class="text-lg text-white/50 max-w-2xl mx-auto">Maßgeschneiderte Pakete für jede Praxisgröße. Wählen Sie den Umfang, der zu Ihnen passt.</p>
       </div>
 
       <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
         <!-- STARTER -->
-        <div class="service-card bg-white rounded-2xl p-8 border border-gray-200 fade-up">
+        <div class="service-card bg-black rounded-2xl p-8 border border-white/10 fade-up">
           <div class="mb-6">
-            <h3 class="text-lg font-bold text-navy mb-1">STARTER</h3>
-            <p class="text-sm text-gray-400">Social Media Einstieg</p>
+            <h3 class="text-lg font-bold text-white mb-1">STARTER</h3>
+            <p class="text-sm text-white/40">Social Media Einstieg</p>
           </div>
           <div class="mb-6">
-            <span class="text-4xl font-black text-navy">€500</span>
-            <span class="text-gray-400">/Monat</span>
+            <span class="text-sm text-gold font-semibold uppercase tracking-wider">Auf Anfrage</span>
           </div>
           <ul class="space-y-3 mb-8">
-            <li class="flex gap-2 text-sm text-gray-600">
+            <li class="flex gap-2 text-sm text-white/60">
               <svg class="w-5 h-5 text-gold flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
               1 Plattform (Instagram, Facebook oder TikTok)
             </li>
-            <li class="flex gap-2 text-sm text-gray-600">
+            <li class="flex gap-2 text-sm text-white/60">
               <svg class="w-5 h-5 text-gold flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
               12 Beiträge pro Monat
             </li>
-            <li class="flex gap-2 text-sm text-gray-600">
+            <li class="flex gap-2 text-sm text-white/60">
               <svg class="w-5 h-5 text-gold flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
               Texte, Hashtags & Planung
             </li>
-            <li class="flex gap-2 text-sm text-gray-600">
+            <li class="flex gap-2 text-sm text-white/60">
               <svg class="w-5 h-5 text-gold flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
               Monatlicher Content-Kalender
             </li>
-            <li class="flex gap-2 text-sm text-gray-600">
+            <li class="flex gap-2 text-sm text-white/60">
               <svg class="w-5 h-5 text-gold flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
               Performance-Bericht
             </li>
@@ -297,41 +296,39 @@
         </div>
 
         <!-- GROWTH (Featured) -->
-        <div class="service-card featured-card bg-white rounded-2xl p-8 relative fade-up">
-          <div class="absolute -top-4 left-1/2 -translate-x-1/2 text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-wider" style="background: linear-gradient(135deg, #B8963A, #C9A84C, #D4B96A); color: #111D35">
+        <div class="service-card featured-card bg-black rounded-2xl p-8 relative fade-up">
+          <div class="absolute -top-4 left-1/2 -translate-x-1/2 text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-wider" style="background: linear-gradient(135deg, #B8963A, #C9A84C, #D4B96A); color: #000000">
             Beliebt
           </div>
           <div class="mb-6">
-            <h3 class="text-lg font-bold text-navy mb-1">GROWTH</h3>
-            <p class="text-sm text-gray-400">Für wachsende Praxen</p>
+            <h3 class="text-lg font-bold text-white mb-1">GROWTH</h3>
+            <p class="text-sm text-white/40">Für wachsende Praxen</p>
           </div>
           <div class="mb-6">
-            <span class="text-sm text-gray-400">ab </span>
-            <span class="text-4xl font-black text-navy">€1.000</span>
-            <span class="text-gray-400">/Monat</span>
+            <span class="text-sm text-gold font-semibold uppercase tracking-wider">Auf Anfrage</span>
           </div>
           <ul class="space-y-3 mb-8">
-            <li class="flex gap-2 text-sm text-gray-600">
+            <li class="flex gap-2 text-sm text-white/60">
               <svg class="w-5 h-5 text-gold flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
               2–3 Plattformen
             </li>
-            <li class="flex gap-2 text-sm text-gray-600">
+            <li class="flex gap-2 text-sm text-white/60">
               <svg class="w-5 h-5 text-gold flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
               20–24 Beiträge pro Monat
             </li>
-            <li class="flex gap-2 text-sm text-gray-600">
+            <li class="flex gap-2 text-sm text-white/60">
               <svg class="w-5 h-5 text-gold flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
               Video-Bearbeitung (Reels, TikToks, Shorts)
             </li>
-            <li class="flex gap-2 text-sm text-gray-600">
+            <li class="flex gap-2 text-sm text-white/60">
               <svg class="w-5 h-5 text-gold flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
               Content-Strategie & Kalender
             </li>
-            <li class="flex gap-2 text-sm text-gray-600">
+            <li class="flex gap-2 text-sm text-white/60">
               <svg class="w-5 h-5 text-gold flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
               Community Management
             </li>
-            <li class="flex gap-2 text-sm text-gray-600">
+            <li class="flex gap-2 text-sm text-white/60">
               <svg class="w-5 h-5 text-gold flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
               Monatliches Strategiegespräch
             </li>
@@ -340,15 +337,13 @@
         </div>
 
         <!-- PREMIUM -->
-        <div class="service-card rounded-2xl p-8 text-white fade-up" style="background: #1B2A4A">
+        <div class="service-card rounded-2xl p-8 text-white fade-up" style="background: #0A0A0A">
           <div class="mb-6">
             <h3 class="text-lg font-bold text-white mb-1">PREMIUM</h3>
             <p class="text-sm text-white/50">Komplettbetreuung</p>
           </div>
           <div class="mb-6">
-            <span class="text-sm text-white/50">ab </span>
-            <span class="text-4xl font-black text-white">€2.500</span>
-            <span class="text-white/50">/Monat</span>
+            <span class="text-sm text-gold font-semibold uppercase tracking-wider">Auf Anfrage</span>
           </div>
           <ul class="space-y-3 mb-8">
             <li class="flex gap-2 text-sm text-white/70">
@@ -383,41 +378,41 @@
   </section>
 
   <!-- ============ RESULTS / SOCIAL PROOF ============ -->
-  <section id="ergebnisse" class="py-20 md:py-28 bg-gray-50">
+  <section id="ergebnisse" class="py-20 md:py-28 section-border-top" style="background: #0A0A0A">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-16 fade-up">
-        <h2 class="text-3xl md:text-4xl font-bold text-navy mb-4">Ergebnisse, die überzeugen</h2>
+        <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Ergebnisse, die überzeugen</h2>
         <div class="section-divider mb-6"></div>
       </div>
 
       <!-- Value Props -->
       <div class="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto mb-16 fade-up">
         <div class="text-center">
-          <div class="w-12 h-12 bg-gold/10 rounded-xl flex items-center justify-center mx-auto mb-4">
+          <div class="w-12 h-12 bg-gold/5 rounded-xl flex items-center justify-center mx-auto mb-4">
             <svg class="w-6 h-6 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
           </div>
-          <h3 class="font-bold text-navy mb-2">Schnelle Umsetzung</h3>
-          <p class="text-sm text-gray-500">Erste sichtbare Fortschritte innerhalb von 30 Tagen nach Start.</p>
+          <h3 class="font-bold text-white mb-2">Schnelle Umsetzung</h3>
+          <p class="text-sm text-white/50">Erste sichtbare Fortschritte innerhalb von 30 Tagen nach Start.</p>
         </div>
         <div class="text-center">
-          <div class="w-12 h-12 bg-gold/10 rounded-xl flex items-center justify-center mx-auto mb-4">
+          <div class="w-12 h-12 bg-gold/5 rounded-xl flex items-center justify-center mx-auto mb-4">
             <svg class="w-6 h-6 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
           </div>
-          <h3 class="font-bold text-navy mb-2">Exklusiver Branchenfokus</h3>
-          <p class="text-sm text-gray-500">Wir arbeiten ausschließlich mit Zahnarztpraxen und Kosmetikstudios.</p>
+          <h3 class="font-bold text-white mb-2">Exklusiver Branchenfokus</h3>
+          <p class="text-sm text-white/50">Wir arbeiten ausschließlich mit Zahnarztpraxen und Kosmetikstudios.</p>
         </div>
         <div class="text-center">
-          <div class="w-12 h-12 bg-gold/10 rounded-xl flex items-center justify-center mx-auto mb-4">
+          <div class="w-12 h-12 bg-gold/5 rounded-xl flex items-center justify-center mx-auto mb-4">
             <svg class="w-6 h-6 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
           </div>
-          <h3 class="font-bold text-navy mb-2">Keine Bindung</h3>
-          <p class="text-sm text-gray-500">Wir überzeugen durch Ergebnisse, nicht durch lange Verträge.</p>
+          <h3 class="font-bold text-white mb-2">Keine Bindung</h3>
+          <p class="text-sm text-white/50">Wir überzeugen durch Ergebnisse, nicht durch lange Verträge.</p>
         </div>
       </div>
 
       <!-- Why dental -->
       <div class="text-center mt-16 fade-up">
-        <div class="rounded-2xl p-8 md:p-12 max-w-3xl mx-auto" style="background: #1B2A4A">
+        <div class="rounded-2xl p-8 md:p-12 max-w-3xl mx-auto" style="background: #0A0A0A">
           <h3 class="text-2xl font-bold text-white mb-4">Warum Dental & Kosmetik?</h3>
           <p class="text-white/70 leading-relaxed">
             Wir verstehen Ihre Branche. Jeder Post, jedes Video, jede Strategie ist auf die Bedürfnisse
@@ -430,12 +425,12 @@
   </section>
 
   <!-- ============ ABOUT ============ -->
-  <section id="ueber" class="py-20 md:py-28 bg-white">
+  <section id="ueber" class="py-20 md:py-28 section-border-top" style="background: #111111">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-16 fade-up">
-        <h2 class="text-3xl md:text-4xl font-bold text-navy mb-4">Über Lumiere</h2>
+        <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Über Lumiere</h2>
         <div class="section-divider mb-6"></div>
-        <p class="text-lg text-gray-500 max-w-2xl mx-auto">
+        <p class="text-lg text-white/50 max-w-2xl mx-auto">
           Wir kombinieren kreatives Marketing mit modernster KI-Technologie,
           um Zahnarztpraxen und Kosmetikstudios online sichtbar zu machen.
         </p>
@@ -443,115 +438,115 @@
 
       <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-4xl mx-auto">
         <!-- Card 1 -->
-        <div class="bg-gray-50 rounded-xl p-6 text-center fade-up">
-          <div class="w-12 h-12 bg-gold/10 rounded-xl flex items-center justify-center mx-auto mb-4">
+        <div class="bg-neutral-900 rounded-xl p-6 text-center fade-up">
+          <div class="w-12 h-12 bg-gold/5 rounded-xl flex items-center justify-center mx-auto mb-4">
             <svg class="w-6 h-6 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
           </div>
-          <h3 class="font-bold text-navy mb-2">Branchenspezialist</h3>
-          <p class="text-sm text-gray-500">Nur Dental & Kosmetik. Kein Streuverlust.</p>
+          <h3 class="font-bold text-white mb-2">Branchenspezialist</h3>
+          <p class="text-sm text-white/50">Nur Dental & Kosmetik. Kein Streuverlust.</p>
         </div>
 
         <!-- Card 2 -->
-        <div class="bg-gray-50 rounded-xl p-6 text-center fade-up">
-          <div class="w-12 h-12 bg-gold/10 rounded-xl flex items-center justify-center mx-auto mb-4">
+        <div class="bg-neutral-900 rounded-xl p-6 text-center fade-up">
+          <div class="w-12 h-12 bg-gold/5 rounded-xl flex items-center justify-center mx-auto mb-4">
             <svg class="w-6 h-6 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
           </div>
-          <h3 class="font-bold text-navy mb-2">KI-gestützt</h3>
-          <p class="text-sm text-gray-500">Modernste Tools für bessere Ergebnisse.</p>
+          <h3 class="font-bold text-white mb-2">KI-gestützt</h3>
+          <p class="text-sm text-white/50">Modernste Tools für bessere Ergebnisse.</p>
         </div>
 
         <!-- Card 3 -->
-        <div class="bg-gray-50 rounded-xl p-6 text-center fade-up">
-          <div class="w-12 h-12 bg-gold/10 rounded-xl flex items-center justify-center mx-auto mb-4">
+        <div class="bg-neutral-900 rounded-xl p-6 text-center fade-up">
+          <div class="w-12 h-12 bg-gold/5 rounded-xl flex items-center justify-center mx-auto mb-4">
             <svg class="w-6 h-6 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
           </div>
-          <h3 class="font-bold text-navy mb-2">Datengetrieben</h3>
-          <p class="text-sm text-gray-500">Entscheidungen basieren auf Zahlen, nicht Bauchgefühl.</p>
+          <h3 class="font-bold text-white mb-2">Datengetrieben</h3>
+          <p class="text-sm text-white/50">Entscheidungen basieren auf Zahlen, nicht Bauchgefühl.</p>
         </div>
 
         <!-- Card 4 -->
-        <div class="bg-gray-50 rounded-xl p-6 text-center fade-up">
-          <div class="w-12 h-12 bg-gold/10 rounded-xl flex items-center justify-center mx-auto mb-4">
+        <div class="bg-neutral-900 rounded-xl p-6 text-center fade-up">
+          <div class="w-12 h-12 bg-gold/5 rounded-xl flex items-center justify-center mx-auto mb-4">
             <svg class="w-6 h-6 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
           </div>
-          <h3 class="font-bold text-navy mb-2">Made in Germany</h3>
-          <p class="text-sm text-gray-500">Lokales Verständnis, deutsche Qualität.</p>
+          <h3 class="font-bold text-white mb-2">Made in Germany</h3>
+          <p class="text-sm text-white/50">Lokales Verständnis, deutsche Qualität.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- ============ FAQ ============ -->
-  <section class="py-20 md:py-28 bg-gray-50">
+  <section class="py-20 md:py-28 section-border-top" style="background: #0A0A0A">
     <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-16 fade-up">
-        <h2 class="text-3xl md:text-4xl font-bold text-navy mb-4">Häufig gestellte Fragen</h2>
+        <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Häufig gestellte Fragen</h2>
         <div class="section-divider mb-6"></div>
       </div>
 
       <div class="space-y-4 fade-up">
         <!-- FAQ 1 -->
-        <details class="group bg-white rounded-xl border border-gray-200 overflow-hidden">
-          <summary class="flex items-center justify-between cursor-pointer px-6 py-5 font-semibold text-navy hover:bg-gray-50 transition-colors">
+        <details class="group bg-black rounded-xl border border-white/10 overflow-hidden">
+          <summary class="flex items-center justify-between cursor-pointer px-6 py-5 font-semibold text-white hover:bg-neutral-900 transition-colors">
             Was kostet Social Media Marketing für meine Praxis?
             <svg class="w-5 h-5 text-gold flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
           </summary>
-          <div class="px-6 pb-5 text-gray-600 leading-relaxed">
+          <div class="px-6 pb-5 text-white/60 leading-relaxed">
             Unsere Pakete starten bei €500/Monat für den Einstieg. Je nach Umfang und Plattformen liegen die Kosten zwischen €500 und €3.000 pro Monat. Im kostenlosen Audit besprechen wir, welches Paket am besten zu Ihrer Praxis passt.
           </div>
         </details>
 
         <!-- FAQ 2 -->
-        <details class="group bg-white rounded-xl border border-gray-200 overflow-hidden">
-          <summary class="flex items-center justify-between cursor-pointer px-6 py-5 font-semibold text-navy hover:bg-gray-50 transition-colors">
+        <details class="group bg-black rounded-xl border border-white/10 overflow-hidden">
+          <summary class="flex items-center justify-between cursor-pointer px-6 py-5 font-semibold text-white hover:bg-neutral-900 transition-colors">
             Wie schnell sehe ich Ergebnisse?
             <svg class="w-5 h-5 text-gold flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
           </summary>
-          <div class="px-6 pb-5 text-gray-600 leading-relaxed">
+          <div class="px-6 pb-5 text-white/60 leading-relaxed">
             Erste sichtbare Verbesserungen (mehr Reichweite, Engagement) sehen Sie in der Regel innerhalb von 30 Tagen. Für nachhaltige Patientengewinnung rechnen wir mit 2–3 Monaten kontinuierlicher Arbeit.
           </div>
         </details>
 
         <!-- FAQ 3 -->
-        <details class="group bg-white rounded-xl border border-gray-200 overflow-hidden">
-          <summary class="flex items-center justify-between cursor-pointer px-6 py-5 font-semibold text-navy hover:bg-gray-50 transition-colors">
+        <details class="group bg-black rounded-xl border border-white/10 overflow-hidden">
+          <summary class="flex items-center justify-between cursor-pointer px-6 py-5 font-semibold text-white hover:bg-neutral-900 transition-colors">
             Muss ich selbst Inhalte erstellen?
             <svg class="w-5 h-5 text-gold flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
           </summary>
-          <div class="px-6 pb-5 text-gray-600 leading-relaxed">
+          <div class="px-6 pb-5 text-white/60 leading-relaxed">
             Nein. Wir übernehmen die komplette Content-Erstellung — von Texten über Grafiken bis hin zu Videos. Ab und zu bitten wir um kurze Fotos oder Clips aus Ihrem Praxisalltag, die wir dann professionell aufbereiten.
           </div>
         </details>
 
         <!-- FAQ 4 -->
-        <details class="group bg-white rounded-xl border border-gray-200 overflow-hidden">
-          <summary class="flex items-center justify-between cursor-pointer px-6 py-5 font-semibold text-navy hover:bg-gray-50 transition-colors">
+        <details class="group bg-black rounded-xl border border-white/10 overflow-hidden">
+          <summary class="flex items-center justify-between cursor-pointer px-6 py-5 font-semibold text-white hover:bg-neutral-900 transition-colors">
             Welche Plattformen sind für meine Praxis am besten?
             <svg class="w-5 h-5 text-gold flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
           </summary>
-          <div class="px-6 pb-5 text-gray-600 leading-relaxed">
+          <div class="px-6 pb-5 text-white/60 leading-relaxed">
             Für die meisten Zahnarztpraxen und Kosmetikstudios empfehlen wir Instagram und TikTok als Hauptkanäle. Instagram für Vertrauen und Professionalität, TikTok für Reichweite bei jüngeren Zielgruppen. Im Audit analysieren wir, wo Ihre Zielgruppe am aktivsten ist.
           </div>
         </details>
 
         <!-- FAQ 5 -->
-        <details class="group bg-white rounded-xl border border-gray-200 overflow-hidden">
-          <summary class="flex items-center justify-between cursor-pointer px-6 py-5 font-semibold text-navy hover:bg-gray-50 transition-colors">
+        <details class="group bg-black rounded-xl border border-white/10 overflow-hidden">
+          <summary class="flex items-center justify-between cursor-pointer px-6 py-5 font-semibold text-white hover:bg-neutral-900 transition-colors">
             Gibt es eine Mindestvertragslaufzeit?
             <svg class="w-5 h-5 text-gold flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
           </summary>
-          <div class="px-6 pb-5 text-gray-600 leading-relaxed">
+          <div class="px-6 pb-5 text-white/60 leading-relaxed">
             Wir empfehlen eine Zusammenarbeit von mindestens 3 Monaten, damit die Strategie ihre volle Wirkung entfalten kann. Eine starre Bindung gibt es bei uns nicht — wir überzeugen durch Ergebnisse, nicht durch Verträge.
           </div>
         </details>
 
         <!-- FAQ 6 -->
-        <details class="group bg-white rounded-xl border border-gray-200 overflow-hidden">
-          <summary class="flex items-center justify-between cursor-pointer px-6 py-5 font-semibold text-navy hover:bg-gray-50 transition-colors">
+        <details class="group bg-black rounded-xl border border-white/10 overflow-hidden">
+          <summary class="flex items-center justify-between cursor-pointer px-6 py-5 font-semibold text-white hover:bg-neutral-900 transition-colors">
             Was unterscheidet Lumiere von anderen Agenturen?
             <svg class="w-5 h-5 text-gold flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
           </summary>
-          <div class="px-6 pb-5 text-gray-600 leading-relaxed">
+          <div class="px-6 pb-5 text-white/60 leading-relaxed">
             Wir sind keine generische Agentur. Wir arbeiten ausschließlich mit Zahnarztpraxen und Kosmetikstudios — das heißt, wir kennen Ihre Branche, Ihre Zielgruppe und was funktioniert. Dazu nutzen wir KI-gestützte Tools, die unsere Arbeit schneller und präziser machen.
           </div>
         </details>
@@ -560,7 +555,7 @@
   </section>
 
   <!-- ============ CONTACT ============ -->
-  <section id="kontakt" class="py-20 md:py-28" style="background: linear-gradient(135deg, #111D35 0%, #1B2A4A 50%, #243556 100%)">
+  <section id="kontakt" class="py-20 md:py-28" style="background: linear-gradient(135deg, #000000 0%, #0A0A0A 50%, #111111 100%)">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid md:grid-cols-2 gap-12 md:gap-16 items-start">
         <!-- Left: CTA text -->
@@ -586,39 +581,39 @@
 
         <!-- Right: Form -->
         <div class="fade-up">
-          <form id="contact-form" action="https://formspree.io/f/placeholder" method="POST" class="bg-white rounded-2xl p-6 md:p-8 shadow-lg" data-email="tejaskapoortennis@gmail.com">
+          <form id="contact-form" action="https://formspree.io/f/placeholder" method="POST" class="rounded-2xl p-6 md:p-8 border border-white/10" style="background: #161616" data-email="tejaskapoortennis@gmail.com">
             <div class="space-y-4">
               <div>
-                <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Name *</label>
+                <label for="name" class="block text-sm font-medium text-white/70 mb-1">Name *</label>
                 <input type="text" id="name" name="name" required class="form-input" placeholder="Ihr Name">
               </div>
               <div>
-                <label for="email" class="block text-sm font-medium text-gray-700 mb-1">E-Mail *</label>
+                <label for="email" class="block text-sm font-medium text-white/70 mb-1">E-Mail *</label>
                 <input type="email" id="email" name="email" required class="form-input" placeholder="ihre@email.de">
               </div>
               <div>
-                <label for="practice" class="block text-sm font-medium text-gray-700 mb-1">Praxis / Klinik</label>
+                <label for="practice" class="block text-sm font-medium text-white/70 mb-1">Praxis / Klinik</label>
                 <input type="text" id="practice" name="practice" class="form-input" placeholder="Name Ihrer Praxis">
               </div>
               <div>
-                <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Telefon</label>
+                <label for="phone" class="block text-sm font-medium text-white/70 mb-1">Telefon</label>
                 <input type="tel" id="phone" name="phone" class="form-input" placeholder="+49 ...">
               </div>
               <div>
-                <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Nachricht</label>
+                <label for="message" class="block text-sm font-medium text-white/70 mb-1">Nachricht</label>
                 <textarea id="message" name="message" rows="3" class="form-input" placeholder="Wie können wir Ihnen helfen?"></textarea>
               </div>
               <button type="submit" class="btn-gold w-full text-center text-lg py-3">
                 Audit anfordern
               </button>
-              <p class="text-xs text-gray-400 text-center">Wir melden uns innerhalb von 24 Stunden bei Ihnen.</p>
+              <p class="text-xs text-white/40 text-center">Wir melden uns innerhalb von 24 Stunden bei Ihnen.</p>
             </div>
 
             <!-- Success message (hidden by default) -->
             <div id="form-success" class="hidden text-center py-8">
-              <svg class="w-12 h-12 text-emerald-500 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-              <h3 class="text-xl font-bold text-navy mb-2">Vielen Dank!</h3>
-              <p class="text-gray-500">Wir melden uns in Kürze bei Ihnen.</p>
+              <svg class="w-12 h-12 text-gold mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+              <h3 class="text-xl font-bold text-white mb-2">Vielen Dank!</h3>
+              <p class="text-white/50">Wir melden uns in Kürze bei Ihnen.</p>
             </div>
           </form>
         </div>
@@ -627,7 +622,7 @@
   </section>
 
   <!-- ============ FOOTER ============ -->
-  <footer class="py-12" style="background: #111D35">
+  <footer class="py-12" style="background: #000000">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid md:grid-cols-3 gap-8 mb-8">
         <!-- Brand -->
@@ -707,7 +702,7 @@
           const y = window.scrollY;
           // Navbar
           if (y > 50) {
-            navbar.style.background = 'rgba(17, 29, 53, 0.95)';
+            navbar.style.background = 'rgba(0, 0, 0, 0.95)';
             navbar.classList.add('nav-blur', 'shadow-lg');
           } else {
             navbar.style.background = 'transparent';
