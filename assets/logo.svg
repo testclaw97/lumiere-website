@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 40" width="200" height="40">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&amp;display=swap');
+  </style>
+  <text x="0" y="30" font-family="Inter, sans-serif" font-size="28" font-weight="700" fill="#C9A84C">&#x2726;</text>
+  <text x="32" y="29" font-family="Inter, sans-serif" font-size="24" font-weight="700" fill="#FFFFFF" letter-spacing="-0.5">LUMIERE</text>
+</svg>

@@ -1,0 +1,222 @@
+/* Lumiere Media & Marketing — Custom Styles */
+
+:root {
+  --navy: #1B2A4A;
+  --navy-light: #243556;
+  --navy-dark: #111D35;
+  --gold: #C9A84C;
+  --gold-light: #D4B96A;
+  --gold-dark: #B8963A;
+  --white: #FFFFFF;
+  --gray-50: #F8FAFC;
+  --gray-100: #F1F5F9;
+  --gray-200: #E2E8F0;
+  --gray-400: #94A3B8;
+  --gray-600: #475569;
+  --gray-800: #1E293B;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: var(--gray-800);
+  overflow-x: hidden;
+}
+
+/* Gradient backgrounds */
+.bg-navy-gradient {
+  background: linear-gradient(135deg, var(--navy-dark) 0%, var(--navy) 50%, var(--navy-light) 100%);
+}
+
+.bg-gold-gradient {
+  background: linear-gradient(135deg, var(--gold-dark) 0%, var(--gold) 50%, var(--gold-light) 100%);
+}
+
+/* Gold text */
+.text-gold {
+  color: var(--gold);
+}
+
+/* Subtle grid pattern overlay */
+.hero-pattern {
+  background-image:
+    radial-gradient(circle at 25% 25%, rgba(201, 168, 76, 0.05) 0%, transparent 50%),
+    radial-gradient(circle at 75% 75%, rgba(201, 168, 76, 0.08) 0%, transparent 50%);
+}
+
+/* Card hover effects */
+.service-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.service-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(27, 42, 74, 0.15);
+}
+
+/* Featured card glow */
+.featured-card {
+  border: 2px solid var(--gold);
+  position: relative;
+}
+.featured-card::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  border-radius: inherit;
+  background: linear-gradient(135deg, var(--gold), transparent, var(--gold));
+  z-index: -1;
+  opacity: 0.3;
+  filter: blur(8px);
+}
+
+/* Scroll animations */
+.fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Nav backdrop */
+.nav-blur {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* Button styles */
+.btn-gold {
+  background: var(--gold);
+  color: var(--navy-dark);
+  font-weight: 600;
+  padding: 0.75rem 1.75rem;
+  border-radius: 0.5rem;
+  transition: all 0.2s ease;
+  display: inline-block;
+  text-decoration: none;
+}
+.btn-gold:hover {
+  background: var(--gold-light);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(201, 168, 76, 0.4);
+}
+
+.btn-outline {
+  border: 2px solid var(--gold);
+  color: var(--gold);
+  font-weight: 600;
+  padding: 0.75rem 1.75rem;
+  border-radius: 0.5rem;
+  transition: all 0.2s ease;
+  display: inline-block;
+  text-decoration: none;
+}
+.btn-outline:hover {
+  background: var(--gold);
+  color: var(--navy-dark);
+}
+
+.btn-navy {
+  background: var(--navy);
+  color: var(--white);
+  font-weight: 600;
+  padding: 0.75rem 1.75rem;
+  border-radius: 0.5rem;
+  transition: all 0.2s ease;
+  display: inline-block;
+  text-decoration: none;
+}
+.btn-navy:hover {
+  background: var(--navy-light);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(27, 42, 74, 0.3);
+}
+
+/* Form styles */
+.form-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--gray-200);
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  background: var(--white);
+}
+.form-input:focus {
+  outline: none;
+  border-color: var(--gold);
+  box-shadow: 0 0 0 3px rgba(201, 168, 76, 0.15);
+}
+
+/* Mobile menu */
+.mobile-menu {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+.mobile-menu.open {
+  max-height: 400px;
+}
+
+/* Stat counter */
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--navy);
+  line-height: 1;
+}
+
+/* Testimonial quote */
+.quote-mark {
+  font-size: 4rem;
+  line-height: 1;
+  color: var(--gold);
+  font-family: Georgia, serif;
+}
+
+/* Section divider */
+.section-divider {
+  width: 60px;
+  height: 3px;
+  background: var(--gold);
+  margin: 0 auto;
+}
+
+/* FAQ accordion */
+details summary {
+  list-style: none;
+}
+details summary::-webkit-details-marker {
+  display: none;
+}
+details[open] summary {
+  border-bottom: 1px solid var(--gray-200);
+}
+
+/* Floating CTA pulse */
+@keyframes soft-pulse {
+  0%, 100% { box-shadow: 0 8px 24px rgba(201, 168, 76, 0.4); }
+  50% { box-shadow: 0 8px 32px rgba(201, 168, 76, 0.6); }
+}
+#floating-cta {
+  animation: soft-pulse 3s ease-in-out infinite;
+}
+
+/* Step number circles */
+.step-number {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: var(--white);
+  background: linear-gradient(135deg, var(--gold-dark), var(--gold), var(--gold-light));
+}
