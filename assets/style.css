@@ -206,14 +206,15 @@ details[open] summary {
   border-bottom: 1px solid var(--gray-200);
 }
 
-/* Floating CTA pulse */
-@keyframes soft-pulse {
-  0%, 100% { box-shadow: 0 8px 24px rgba(201, 168, 76, 0.4); }
-  50% { box-shadow: 0 8px 32px rgba(201, 168, 76, 0.6); }
-}
+/* Floating CTA — static shadow, no animation (better mobile perf) */
 #floating-cta {
-  animation: soft-pulse 3s ease-in-out infinite;
+  box-shadow: 0 8px 24px rgba(201, 168, 76, 0.4);
+  will-change: opacity, transform;
 }
+
+/* GPU hints for scroll-driven elements */
+.nav-blur { will-change: background; }
+.fade-up { will-change: opacity, transform; }
 
 /* Step number circles */
 .step-number {
