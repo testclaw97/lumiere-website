@@ -14,9 +14,7 @@
   <meta name="twitter:description" content="KI-gestützte Social-Media-Agentur für Zahnarztpraxen und Kosmetikstudios. Mehr Patienten. Mehr Sichtbarkeit. Mehr Umsatz.">
   <meta name="twitter:image" content="/assets/og-image.svg">
   <meta name="theme-color" content="#1B2A4A">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <!-- Fonts self-hosted in assets/fonts/ (DSGVO compliant) -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -44,7 +42,7 @@
     "name": "Lumiere Media & Marketing",
     "description": "KI-gestützte Social-Media-Agentur spezialisiert auf Zahnarztpraxen und Kosmetikstudios in Deutschland.",
     "email": "tejaskapoortennis@gmail.com",
-    "url": "https://lumiere-media.de",
+    "url": "https://lumiere-website.vercel.app",
     "areaServed": {
       "@type": "Country",
       "name": "Germany"
@@ -55,7 +53,7 @@
       "@type": "Person",
       "name": "Tejas Kapoor"
     },
-    "priceRange": "€500 - €3000/Monat"
+    "priceRange": "ab €500/Monat"
   }
   </script>
 </head>
@@ -66,7 +64,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-16 md:h-20">
         <!-- Logo -->
-        <a href="#" class="flex items-center gap-2">
+        <a href="/" class="flex items-center gap-2">
           <img src="/assets/logo.svg" alt="Lumiere Media & Marketing" class="h-8">
         </a>
 
@@ -134,7 +132,7 @@
           </div>
           <div class="flex items-center gap-2">
             <svg class="w-5 h-5 text-gold" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-            <span class="text-sm text-white/60">Ergebnisse in 30 Tagen</span>
+            <span class="text-sm text-white/60">Erste Ergebnisse in 30 Tagen</span>
           </div>
           <div class="flex items-center gap-2">
             <svg class="w-5 h-5 text-gold" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
@@ -384,36 +382,28 @@
         <div class="section-divider mb-6"></div>
       </div>
 
-      <!-- Stats -->
-      <div class="grid grid-cols-3 gap-8 max-w-3xl mx-auto mb-16 fade-up">
+      <!-- Value Props -->
+      <div class="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto mb-16 fade-up">
         <div class="text-center">
-          <div class="stat-number">2+</div>
-          <p class="text-sm text-gray-500 mt-2">Zufriedene Kunden</p>
-        </div>
-        <div class="text-center">
-          <div class="stat-number">50+</div>
-          <p class="text-sm text-gray-500 mt-2">Beiträge erstellt</p>
-        </div>
-        <div class="text-center">
-          <div class="stat-number">100%</div>
-          <p class="text-sm text-gray-500 mt-2">Dental & Kosmetik Fokus</p>
-        </div>
-      </div>
-
-      <!-- Testimonial -->
-      <div class="max-w-2xl mx-auto fade-up">
-        <div class="bg-white rounded-2xl p-8 md:p-10 shadow-sm border border-gray-100">
-          <div class="quote-mark mb-2">"</div>
-          <blockquote class="text-lg md:text-xl text-gray-700 leading-relaxed mb-6">
-            Seit Lumiere unser Social Media betreut, haben wir deutlich mehr Anfragen über Instagram bekommen. Professionell, zuverlässig und sie verstehen unsere Branche.
-          </blockquote>
-          <div class="flex items-center gap-3">
-            <div class="w-10 h-10 rounded-full flex items-center justify-center text-white font-bold text-sm" style="background: #1B2A4A">ZP</div>
-            <div>
-              <p class="font-semibold text-navy">Zahnarztpraxis</p>
-              <p class="text-sm text-gray-400">Dental-Kunde seit 2026</p>
-            </div>
+          <div class="w-12 h-12 bg-gold/10 rounded-xl flex items-center justify-center mx-auto mb-4">
+            <svg class="w-6 h-6 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
           </div>
+          <h3 class="font-bold text-navy mb-2">Schnelle Umsetzung</h3>
+          <p class="text-sm text-gray-500">Erste sichtbare Fortschritte innerhalb von 30 Tagen nach Start.</p>
+        </div>
+        <div class="text-center">
+          <div class="w-12 h-12 bg-gold/10 rounded-xl flex items-center justify-center mx-auto mb-4">
+            <svg class="w-6 h-6 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+          </div>
+          <h3 class="font-bold text-navy mb-2">Exklusiver Branchenfokus</h3>
+          <p class="text-sm text-gray-500">Wir arbeiten ausschließlich mit Zahnarztpraxen und Kosmetikstudios.</p>
+        </div>
+        <div class="text-center">
+          <div class="w-12 h-12 bg-gold/10 rounded-xl flex items-center justify-center mx-auto mb-4">
+            <svg class="w-6 h-6 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <h3 class="font-bold text-navy mb-2">Keine Bindung</h3>
+          <p class="text-sm text-gray-500">Wir überzeugen durch Ergebnisse, nicht durch lange Verträge.</p>
         </div>
       </div>
 
@@ -665,7 +655,7 @@
 
       <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
         <p class="text-sm text-white/30">&copy; 2026 Lumiere Media & Marketing. Alle Rechte vorbehalten.</p>
-        <p class="text-sm text-white/30">Social-Media-Kanäle folgen in Kürze.</p>
+        <a href="mailto:tejaskapoortennis@gmail.com" class="text-sm text-white/30 hover:text-gold transition-colors">tejaskapoortennis@gmail.com</a>
       </div>
     </div>
   </footer>
